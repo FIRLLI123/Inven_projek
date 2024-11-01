@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:visibility="gone">
+
+
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/iditem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="iditem"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(USER) : "
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+
+
+            <TextView
+                android:id="@+id/posisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/perusahaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/nama_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Nama Item"
+                android:textColor="@color/black" />
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/namaitem"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint=""
+            android:padding="8dp"
+            android:text=""
+            android:focusable="false"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/i_hargamodal_t"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="*Harga Modal"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Harga Jual"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sisah Stok"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/hargamodal"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint=""
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"/>
+
+
+
+
+            <EditText
+                android:id="@+id/hargajual"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/background"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint=""
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:inputType="numberDecimal"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:scrollbarSize="12dp"
+                android:textSize="12sp"
+                android:spinnerMode="dropdown"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:focusable="false"
+            android:gravity="top"
+            android:hint="kategori"
+            android:text=""
+
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:visibility="visible"
+            />
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:textSize="10dp"
+            android:textColorLink="@color/black"
+            android:text="Ubah Harga"
+            android:textColor="@color/white"
+            android:background="@drawable/custom2"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+
+        <Button
+            android:id="@+id/btnhapus"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="marquee"
+            android:textSize="10dp"
+            android:textColorLink="@color/black"
+            android:text="HAPUS"
+            android:textColor="@color/white"
+            android:background="@color/merah"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

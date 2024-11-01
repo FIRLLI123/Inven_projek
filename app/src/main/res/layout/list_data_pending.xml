@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:background="@color/birumuda"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="QTY"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+
+                android:background="@color/birumuda"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@color/birumuda"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tanggal_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TANGGAL"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tanggal_asli_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TANGGAL"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:gravity="top"
+            >
+
+
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom"
+                android:paddingBottom="10dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/user"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="left">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bulat_biru"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="4dp">
+
+
+
+
+                        <TextView
+                            android:id="@+id/nomor_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            />
+
+                    </LinearLayout>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pelanggan"
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textSize="15dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="@color/white"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/nama_pelanggan_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="15dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:layout_marginRight="15dp">
+
+
+                        <ImageView
+                            android:id="@+id/trash_list"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginLeft="1dp"
+                            android:background="@drawable/trash2"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/nama_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="1dp"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/qty_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3pcs"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/multi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Multi"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:visibility="gone"
+                    android:textColor="@color/white"/>
+
+
+                <TextView
+                    android:id="@+id/total_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp.0"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:textColor="@color/black"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/underline"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textStyle="bold|italic"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textStyle="bold|italic"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/id_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nama outlet"
+
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

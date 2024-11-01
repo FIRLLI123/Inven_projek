@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#EFEFEF">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+            >
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tanggal_pembelian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="19/10/2021"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:id="@+id/tanggal_dibayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="19/10/2021   +1"
+                android:visibility="gone"
+                />
+
+
+
+            <TextView
+                android:id="@+id/nama_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="nama_input"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/nama_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="nama_user"
+                android:visibility="gone"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/modal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="modal"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="margin"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:visibility="gone">
+
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="username"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(USER) : "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"/>
+
+
+
+                <TextView
+                    android:id="@+id/posisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/perusahaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="VERIFIKASI PEMBAYARAN"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btnpembayaran"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/paymant"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Nama Pelanggan"
+                        android:visibility="visible"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=":"
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/nama_pelanggan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="240000123"
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Nomor"
+                        android:visibility="visible"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=":"
+                        android:visibility="visible"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/nomor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="ABC CELL"
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Jumlah Item"
+                        android:visibility="visible"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=":"
+                        android:visibility="visible"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/jumlah_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0"
+                        android:visibility="visible"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="SUBTOTAL :            "
+                android:textSize="20dp"
+                android:textColor="@color/birumuda"
+                android:textStyle="bold|italic"/>
+
+
+            <EditText
+                android:id="@+id/rp_subtotal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Rp. 20,000"
+                android:textSize="20dp"
+                android:focusable="false"
+                android:textColor="@color/birumuda"
+                android:textStyle="bold|italic"/>
+
+            <EditText
+                android:id="@+id/subtotal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="20000"
+                android:textSize="20dp"
+                android:textColor="@color/merah"
+                android:textStyle="bold|italic"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/subtotal2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            android:layout_gravity="top"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_marginLeft="12dp"
+            >
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="Uang"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Kembalian"
+                android:textColor="@color/black"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/transfer"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundkotakhitam"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="Nominal Tranfer"
+                android:inputType="numberDecimal"
+                android:digits="0123456789.,"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:text=""/>
+
+
+            <EditText
+                android:id="@+id/cashh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/backgroundkotakhitam"
+                android:focusable="false"
+                android:gravity="top"
+                android:hint="Nonimal Cash"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:inputType="number"
+                android:text="0"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="left"
+            android:gravity="left">
+
+
+            <EditText
+                android:id="@+id/rp_uang"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundkotakhitam"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="Nonimal Uang"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:inputType="numberDecimal"
+                android:text=""
+
+                />
+
+
+            <com.aldoapps.autoformatedittext.AutoFormatEditText
+                android:id="@+id/rp_kembalian"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundkotakhitam"
+                android:hint="Nominal Kembalian"
+                android:maxLength="15"
+                android:textSize="13dp"
+                android:padding="8dp"
+                android:visibility="visible"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+
+            <EditText
+                android:id="@+id/uang"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundkotakhitam"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="Nonimal Uang"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:inputType="numberDecimal"
+                android:text=""
+
+                />
+
+
+            <EditText
+                android:id="@+id/kembalian"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backgroundkotakhitam"
+                android:hint="Nominal Tranfer"
+                android:maxLength="15"
+                android:textSize="13dp"
+                android:padding="8dp"
+                android:visibility="visible"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/input_pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="marquee"
+            android:textSize="10dp"
+            android:textColorLink="@color/black"
+            android:text="INPUT NOMINAL PEMBAYARAN"
+            android:textColor="@color/white"
+            android:background="@drawable/custom2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:layout_marginBottom="30dp"/>
+
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_line_dotted"
+            android:layout_margin="5dp"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="visible"
+            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="TOTAL"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text=": "
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/total_list"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="0"
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/transfernoformat"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:id="@+id/hapus_list"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:textSize="10dp"
+                            android:textColorLink="@color/black"
+                            android:text="HAPUS"
+                            android:textColor="@color/white"
+                            android:background="@drawable/recycle"
+                            android:gravity="center"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="UANG"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=": "
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/uang_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/cashnoformat"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="id"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text=": "
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/id_pembayaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="0"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="KEMBALIAN"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text=": "
+                        android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:id="@+id/kembalian_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="0"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/view_line_dotted"
+            android:layout_margin="5dp"/>
+
+
+        <Button
+            android:id="@+id/btncetak"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="marquee"
+            android:textSize="10dp"
+            android:textColorLink="@color/black"
+            android:text="CETAK"
+            android:textColor="@color/white"
+            android:background="@color/abu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
